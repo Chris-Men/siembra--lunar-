@@ -1,0 +1,21 @@
+ion-card {
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 500px; /* Ancho máximo de la tarjeta */
+  margin: auto; /* Centrar la tarjeta horizontalmente */
+  display: flex; /* Usar flexbox para centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
+  border: 1px solid rgba(0, 26, 141, 0.199);
+  margin-bottom: 50px; /* Espacio entre las tarjetas */
+  text-align: center; /* Centrar el texto dentro de la tarjeta */
+  text-size-adjust: 12;
+}
+
+ion-card:last-child {
+  margin-bottom: 0; /* Eliminar margen inferior de la última tarjeta */
+}
+
+ion-card:hover {
+  cursor: pointer;
+  background: var(--ion-color-light);
+}

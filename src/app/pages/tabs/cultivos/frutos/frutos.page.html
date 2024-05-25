@@ -1,0 +1,17 @@
+<ion-content>
+<app-header backButton="/tabs/cultivos"></app-header>
+ <h2>frutos</h2>
+
+  <div class="content">
+    <div class="container">
+      <div *ngFor="let imageUrl of imageUrls">
+        <ion-card>
+        <div class="image-container">
+          <img [src]="imageUrl" alt="Imagen de frutos" />
+        </div>
+        <p>{{ imageData[imageUrl] }}</p>
+      </ion-card>
+      </div>
+    </div>
+  </div>
+</ion-content>

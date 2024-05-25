@@ -1,0 +1,89 @@
+/* Estilos para los controles del calendario */
+.calendar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Reduce el espacio entre botones y el mes */
+}
+
+/* Estilos para la visualización del mes */
+.month-display {
+  margin: 0 10px; /* Reduce el espacio alrededor de la visualización del mes */
+}
+
+/* Estilos para los botones del calendario */
+.buttonCalendar {
+  background: none;
+  border: none;
+  font-size: 1rem; /* Reduce el tamaño de la fuente */
+  cursor: pointer;
+  padding: 5px; /* Reduce el relleno */
+}
+
+/* Estilos para el contenedor principal del calendario */
+#ex3 {
+  max-width: 100%; /* Asegura que el calendario use el ancho completo disponible */
+  margin: 10px auto;
+  background-color: #bdb8b8e5;
+  padding: 5px; /* Reduce el padding */
+  color: #0c0c0c;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columnas, una por día de la semana */
+  gap: 1px; /* Reduce el espacio entre los días */
+}
+
+/* Estilos para los encabezados del calendario */
+h2 {
+  text-align: center;
+}
+
+/* Estilos para cada día del calendario */
+.day {
+  background-color: #eb882c;
+  color: #1903df;
+  padding: 5px; /* Reduce el relleno */
+  border: 2px solid #ccc; /* Reduce el grosor del borde */
+  border-radius: 5px; /* Reduce el radio del borde */
+  margin-bottom: 5px; /* Reduce el margen inferior */
+  text-align: center;
+  text-wrap: wrap;
+  font-weight: bold;
+  font-size: 0.6rem; /* Reduce el tamaño de la fuente */
+
+  /* Mostrar solo la primera letra en pantalla móvil */
+  @media screen and (max-width: 768px) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/* Estilos para las cajas de los días del calendario */
+.day_box {
+  display: inline-block;
+  width: 100%; /* Asegura que las cajas de los días usen el ancho completo */
+  height: 60px; /* Ajusta la altura para que quepan mejor en pantallas pequeñas */
+  vertical-align: top;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5px; /* Reduce el relleno */
+}
+
+/* Estilos para los botones del calendario */
+.buttonCalendar {
+  background-color: #007BFF; /* Color de fondo azul */
+  color: white; /* Color de texto blanco */
+  border: none; /* Sin borde */
+  padding: 5px 10px; /* Reduce el relleno */
+  font-size: 14px; /* Reduce el tamaño de fuente */
+  cursor: pointer; /* Cursor de puntero al pasar el mouse */
+  border-radius: 5px; /* Bordes redondeados */
+  margin: 2px; /* Espacio entre botones */
+}
+
+/* Estilos al pasar el mouse sobre los botones del calendario */
+.buttonCalendar:hover {
+  background-color: #0056b3; /* Fondo más oscuro al pasar el mouse */
+}

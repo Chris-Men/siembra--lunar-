@@ -1,0 +1,28 @@
+
+.logo {
+    padding: 3px; /* Agrega un espacio de 10px alrededor del contenedor */
+  }
+.logo img {
+    border-radius: 10px; /* Puedes ajustar el valor para cambiar el radio de las esquinas */
+    max-width: 70px; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Permite que la imagen mantenga su relación de aspecto */
+    padding: 5px;
+  } 
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto; // Crea dos columnas de tamaño automático
+    align-items: center; // Alinea verticalmente los elementos al centro
+    column-gap: 10px; // Ajusta el espacio entre la imagen y el texto
+  }
+  
+  img {
+    max-width: 100px; // Ajusta el ancho máximo de la imagen según sea necesario
+  }
+  
+  .lunas-header {
+    width: 100px; // Ajusta el ancho de la imagen al 100% del contenedor
+    height: auto; // Permite que la altura se ajuste automáticamente para mantener la relación de aspecto original
+    max-height: 300px; // Establece una altura máxima para evitar que la imagen se vuelva demasiado grande
+  }
+  

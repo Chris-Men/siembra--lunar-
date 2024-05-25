@@ -1,0 +1,16 @@
+ion-tab-bar{
+    background: var(--ion-color-light);
+    border: 0;
+}
+ion-tab-button{
+    --color-selected: var(--ion-color-primary);
+    --background: var(--ion-color-light);
+}
+  
+ion-tabs.custom-icon-tabs ion-tab-button ion-icon {
+    color: green; /* Cambia el color de los iconos dentro de las pestañas a verde */
+  }
+  ion-tabs.custom-icon-tabs ion-tab-button {
+    --color-selected: green; /* Cambia el color del texto de las etiquetas seleccionadas a verde */
+  }
+    

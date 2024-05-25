@@ -1,0 +1,23 @@
+<ion-content>
+  
+     <app-header backButton="/tabs/home"></app-header>
+ <app-logo></app-logo>
+  <div class="content">
+
+    <ion-card mode="ios">
+    <div class="container">
+      <ion-img src="assets/img/frutoss.jpg" style="max-width: 300px; max-height: 300px;"></ion-img>
+      <ion-button color="medium" (click)="verFrutos()" class="frutos-button">Frutos</ion-button>
+    
+    </div>
+  </ion-card>
+
+  <ion-card mode="ios">
+    <div class="container">
+      <ion-img src="assets/img/hostalizas.jpg"  style="max-width: 300px; max-height: 300px;"></ion-img>
+      <ion-button color="medium" (click)="verHortalizas()" class="hortalizas-button">Hortalizas</ion-button>
+    </div>
+  </ion-card>
+  
+  </div>
+</ion-content>

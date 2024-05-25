@@ -1,0 +1,13 @@
+<ion-content>
+  <app-header backButton="/tabs/home"></app-header>
+  <app-logo></app-logo>
+  <h2>Calendario lunar</h2>
+  
+  <div class="content">
+    <div class="calendar-controls">
+      <button class="buttonCalendar" value="-1">&#10094;</button>
+      <div>{{ moon?.monthName }} {{ moon?.year }}</div>
+      <button class="buttonCalendar" value="1">&#10095;</button>
+    </div>
+    <div class="fondo" id="ex3"></div>
+  </div>

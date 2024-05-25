@@ -1,0 +1,77 @@
+<ion-content>
+
+  <app-header></app-header>
+  <app-logo></app-logo>
+
+  <div class="content">
+
+    <div class="alert-overlay" *ngIf="showAlert" (click)="hideAlert()">
+      <div class="alert-card" (click)="$event.stopPropagation()">
+        <img src="assets/img/fondo.jpg" alt="Imagen de la alerta" (click)="hideAlert()">
+      </div>
+    </div>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <ion-icon  class="icon" name="menu-outline"></ion-icon>
+        </ion-label>
+        <ion-select   (ionChange)="navigate($event.detail.value)">
+          <ion-select-option value="calendario">Calendario</ion-select-option>
+          <ion-select-option value="cultivos">Cultivos</ion-select-option>
+           </ion-select>
+      </ion-item>
+      
+    </ion-list>
+
+    <ion-card *ngIf="selectedOption === 'calendario'">
+      <ion-card-header>
+        <ion-card-title>Calendario</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-thumbnail slot="start">
+          <img alt="Calendario" src="/assets/img/calendarioo.png" />
+        </ion-thumbnail>
+        <ion-button fill="clear" routerLink="/tabs/calendario">Ver calendario</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card *ngIf="selectedOption === 'cultivos'">
+      <ion-card-header>
+        <ion-card-title>Cultivos</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-thumbnail slot="start">
+          <img alt="Cultivos" src="/assets/img/cultivos.jpg" />
+        </ion-thumbnail>
+        <ion-button fill="clear" routerLink="/tabs/cultivos">Ver cultivos</ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="image-container">
+      <div>
+        <h4>Luna nueva</h4>
+        <img src="/assets/img/luna-nueva.png" class="luna-nueva">
+        <p>La sabia se moviliza a la base, concentrandose en la raiz.Ideal para cosecha de raices (zanahoria, nabo,rábanos, lechugas). Quitar hiervas, abonar y podar</p>
+      </div>
+
+      <div>
+        <h4>Cuarto cuarto-creciente</h4>
+        <img src="/assets/img/cuarto-creciente.png" class="cuarto-creciente">
+        <p>La sabia empieza a movilizarse hacia arriba, ideal para la siembra de hortalizas de hoja (lechuga, acelga, etc)</p>
+      </div>
+
+      <div>
+        <h4>Luna llena</h4>
+        <img src="/assets/img/luna-llena.png" class="luna-llena">
+        <p>La sabia se moviliza hacia arriba y se acumula en tallos y hojas.Ideal para la cosecha de frutos y hortalizas de hoja</p>
+      </div>
+
+      <div>
+        <h4>Cuarto-creciente</h4>
+        <img src="/assets/img/cuarto-menguante.png" class="cuarto-menguante">
+        <p>La sabia empieza a dirigirse hacia abajo y acumularse en la raiz. Buen momento para sembrar y transplantar</p>
+      </div>
+    </div>
+  </div>
+</ion-content>

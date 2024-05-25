@@ -1,0 +1,7 @@
+{
+  "name": "siembra--lunar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
